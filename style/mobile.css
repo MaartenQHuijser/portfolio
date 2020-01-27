@@ -3,6 +3,9 @@
     .project__card {
         grid-column-end: span 6;
     }
+    .skills .skill__card {
+        grid-column-end: span 6;
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -10,6 +13,12 @@
         grid-gap: 20px;
     }
     .project__card {
+        grid-column-end: span 12;
+    }
+    .skills {
+        grid-gap: 20px;
+    }
+    .skills .skill__card {
         grid-column-end: span 12;
     }
 }
@@ -25,6 +34,18 @@
         grid-gap: 20px;
     }
     .project__card {
+        grid-column-end: span 6;
+    }
+    .skills {
+        grid-template-columns: 10px repeat(6, 1fr) 10px;
+        grid-gap: 10px;
+    }
+    .skills .skill__cards {
+        grid-column: 2 / span 6;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 20px;
+    }
+    .skills .skill__card {
         grid-column-end: span 6;
     }
 }

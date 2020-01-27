@@ -13,6 +13,7 @@ html {
     line-height: 1, 4;
     --max-width: 1100px;
     background: lightgrey;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -83,7 +84,7 @@ h6 {
 
 .main__nav .container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .main__nav img {
@@ -92,8 +93,10 @@ h6 {
 }
 
 .main__nav .nav__items {
+    grid-column: span 2;
+    justify-items: end;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(5, auto);
 }
 
 /* Jumbo */
@@ -118,44 +121,9 @@ h6 {
     width: 60%;
 }
 
-/* About */
-.about {
-    margin: 100px 0;
-    height: 55vh;
-}
-.about .container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    justify-items: center;
-}
-
-.about .about__card-wrapper {
-    width: 390px;
-    padding: 8px;
-    text-align: center;
-    background-color: #fff;
-}
-
-.about .about__card-wrapper .about__img img {
-    width: 100%;
-}
-
-.about .about__card-wrapper .about__content {
-    padding: 0 50px;
-}
-
-.about .about__text {
-    width: 80%;
-    text-align: center;
-}
-
-.about .about__text h2 {
-    margin-bottom: 25px;
-}
-
 /* Projects  */
 .projects {
+    min-height: 55vh;
     display: grid;
     grid-template-columns: 1fr repeat(12, minmax(auto, 60px)) 1fr;
     grid-gap: 40px;
@@ -217,4 +185,142 @@ h6 {
     padding: 5px 20px;
     background-color: #303032;
     border-radius: 20px;
+}
+
+/* Skills */
+.my-skills {
+    min-height: 55vh;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: 1fr repeat(12, minmax(auto, 60px)) 1fr;
+    grid-gap: 40px;
+    padding: 40px 0;
+}
+
+.skills .skill__cards {
+    grid-column: 2 / span 12;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(auto, 60px));
+    grid-gap: 40px;
+}
+
+.skills .skill__card {
+    grid-column-end: span 4;
+    display: flex;
+    flex-direction: column;
+    background-color: #39393b;
+    transition: all 0.3s ease 0s;
+}
+
+.skills .skill__card:hover {
+    transform: translateY(-7px);
+    cursor: unset;
+}
+
+.skills .card__icon-container {
+    width: 100%;
+    padding-top: 20%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.skills .card__content {
+    padding: 20px;
+}
+
+.skills .card__title {
+    margin-bottom: 20px;
+}
+
+/* About */
+.about {
+    margin: 100px 0;
+    height: 55vh;
+}
+.about .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    justify-items: center;
+}
+
+.about .about__card-wrapper {
+    width: 390px;
+    padding: 8px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.about .about__card-wrapper .about__img img {
+    width: 100%;
+}
+
+.about .about__card-wrapper .about__content {
+    padding: 0 50px;
+}
+
+.about .about__text {
+    width: 80%;
+    text-align: center;
+}
+
+.about .about__text h2 {
+    margin-bottom: 25px;
+}
+
+/* Contact */
+.contact {
+    min-height: 75vh;
+}
+
+.contact .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+.form-wrap {
+    background: #34343b;
+    padding: 15px 25px;
+    color: #fff;
+}
+
+.form-wrap h1,
+.form-wrap p {
+    text-align: center;
+}
+
+.form-wrap .form-group {
+    margin-top: 15px;
+}
+
+.form-wrap .form-group label {
+    display: block;
+    color: #fff;
+}
+
+.form-wrap .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: #ddd 1px solid;
+    border-radius: 5px;
+}
+
+.form-wrap textarea {
+    width: 100%;
+    height: 100px;
+    border: #ddd 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.form-wrap button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
 }
