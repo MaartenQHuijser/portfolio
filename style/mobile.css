@@ -1,0 +1,30 @@
+/* Projects */
+@media only screen and (max-width: 1000px) {
+    .project__card {
+        grid-column-end: span 6;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .projects {
+        grid-gap: 20px;
+    }
+    .project__card {
+        grid-column-end: span 12;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .projects {
+        grid-template-columns: 10px repeat(6, 1fr) 10px;
+        grid-gap: 10px;
+    }
+    .project__cards {
+        grid-column: 2 / span 6;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 20px;
+    }
+    .project__card {
+        grid-column-end: span 6;
+    }
+}
