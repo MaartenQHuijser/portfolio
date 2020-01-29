@@ -13,26 +13,6 @@
 }
 
 @media only screen and (max-width: 700px) {
-    .jumbo {
-        background: url(../img/slide-mobile.jpg);
-    }
-    .jumbo .container {
-        grid-template-columns: 100%;
-    }
-
-    .projects {
-        grid-gap: 20px;
-    }
-    .project__card {
-        grid-column-end: span 12;
-    }
-    .skills {
-        grid-gap: 20px;
-    }
-    .skills .skill__card {
-        grid-column-end: span 12;
-    }
-
     .main__nav img {
         padding: 1rem 0;
     }
@@ -40,6 +20,7 @@
     .nav__hamburger {
         position: fixed;
         right: 10px;
+        top: 10px;
         display: block;
     }
     .bar1,
@@ -77,6 +58,26 @@
     .nav__items--open {
         height: calc(100vh - 75px);
         overflow: auto;
+    }
+
+    .jumbo {
+        background: url(../img/slide-mobile.jpg);
+    }
+    .jumbo .container {
+        grid-template-columns: 100%;
+    }
+
+    .projects {
+        grid-gap: 20px;
+    }
+    .project__card {
+        grid-column-end: span 12;
+    }
+    .skills {
+        grid-gap: 20px;
+    }
+    .skills .skill__card {
+        grid-column-end: span 12;
     }
 }
 

@@ -99,10 +99,16 @@ h6 {
 }
 
 .main__nav .nav__items {
-    grid-column: span2;
-    justify-items: end;
     display: grid;
-    grid-template-columns: repeat(5, auto);
+    grid-column: span 2;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    justify-content: center;
+    grid-gap: 3rem;
+}
+
+.main__nav .nav__items li a {
+    white-space: nowrap;
 }
 
 /* Jumbo */
