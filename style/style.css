@@ -60,6 +60,7 @@ h6 {
     max-width: var(--max-width);
     margin: auto;
     padding: 0 2rem;
+    height: 100%;
 }
 
 .button {
@@ -80,6 +81,7 @@ h6 {
     position: sticky;
     top: 0;
     z-index: 2;
+    height: 75px;
 }
 
 .main__nav .container {
@@ -88,15 +90,19 @@ h6 {
 }
 
 .main__nav img {
-    width: 15%;
+    height: 100%;
     padding: 0.5rem 0;
 }
 
+.nav__hamburger {
+    display: none;
+}
+
 .main__nav .nav__items {
-    grid-column: span 2;
-    justify-items: end;
+    grid-column: span2;
+    /* justify-items: end; */
     display: grid;
-    grid-template-columns: repeat(5, auto);
+    /* grid-template-columns: repeat(5, auto); */
 }
 
 /* Jumbo */
@@ -239,7 +245,7 @@ h6 {
 /* About */
 .about {
     margin: 100px 0;
-    height: 55vh;
+    min-height: 55vh;
 }
 .about .container {
     display: grid;

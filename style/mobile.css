@@ -1,5 +1,9 @@
 /* Projects */
 @media only screen and (max-width: 1000px) {
+    .jumbo {
+        background: url(../img/slide-mobile.jpg);
+    }
+
     .project__card {
         grid-column-end: span 6;
     }
@@ -9,6 +13,13 @@
 }
 
 @media only screen and (max-width: 700px) {
+    .jumbo {
+        background: url(../img/slide-mobile.jpg);
+    }
+    .jumbo .container {
+        grid-template-columns: 100%;
+    }
+
     .projects {
         grid-gap: 20px;
     }
@@ -20,6 +31,52 @@
     }
     .skills .skill__card {
         grid-column-end: span 12;
+    }
+
+    .main__nav img {
+        padding: 1rem 0;
+    }
+
+    .nav__hamburger {
+        position: fixed;
+        right: 10px;
+        display: block;
+    }
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: white;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+    .open .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+    .open .bar2 {
+        opacity: 0;
+    }
+    .open .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+    .nav__items {
+        position: absolute;
+        top: 75px;
+        padding: 0;
+        margin: 0;
+        background-color: black;
+        width: 100%;
+        left: 0;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.5s ease-out;
+    }
+    .nav__items--open {
+        height: calc(100vh - 75px);
+        overflow: auto;
     }
 }
 
@@ -47,5 +104,17 @@
     }
     .skills .skill__card {
         grid-column-end: span 6;
+    }
+
+    .about .about__card-wrapper {
+        width: 100%;
+    }
+
+    .about .container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact .container {
+        grid-template-columns: 1fr;
     }
 }
