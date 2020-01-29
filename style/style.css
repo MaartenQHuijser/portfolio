@@ -100,9 +100,9 @@ h6 {
 
 .main__nav .nav__items {
     grid-column: span2;
-    /* justify-items: end; */
+    justify-items: end;
     display: grid;
-    /* grid-template-columns: repeat(5, auto); */
+    grid-template-columns: repeat(5, auto);
 }
 
 /* Jumbo */
