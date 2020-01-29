@@ -1,18 +1,5 @@
 /* Projects */
 @media only screen and (max-width: 1000px) {
-    .jumbo {
-        background: url(../img/slide-mobile.jpg);
-    }
-
-    .project__card {
-        grid-column-end: span 6;
-    }
-    .skills .skill__card {
-        grid-column-end: span 6;
-    }
-}
-
-@media only screen and (max-width: 700px) {
     .main__nav img {
         padding: 1rem 0;
     }
@@ -68,6 +55,19 @@
         border-bottom: 0.5px solid #666;
     }
 
+    .jumbo {
+        background: url(../img/slide-mobile.jpg);
+    }
+
+    .project__card {
+        grid-column-end: span 6;
+    }
+    .skills .skill__card {
+        grid-column-end: span 6;
+    }
+}
+
+@media only screen and (max-width: 700px) {
     .jumbo {
         background: url(../img/slide-mobile.jpg);
     }
