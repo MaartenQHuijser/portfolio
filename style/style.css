@@ -63,6 +63,14 @@ h6 {
     color: #474747;
     text-align: center;
 }
+
+.section--heading--white {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    color: #fff;
+    text-align: center;
+}
 .container {
     max-width: var(--max-width);
     margin: auto;
@@ -297,7 +305,7 @@ h6 {
 
 /* Contact */
 .contact {
-    padding-top: 50px;
+    padding: 50px 0;
     min-height: 70vh;
     background: #303032;
     color: #fff;
