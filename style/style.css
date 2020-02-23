@@ -237,11 +237,13 @@ h6 {
 }
 
 .skills .skill__card {
-    grid-column-end: span 4;
+    grid-column-end: span 2;
     display: flex;
     flex-direction: column;
     background-color: var(--card-color);
     transition: all 0.3s ease 0s;
+    text-align: center;
+    min-width: 160px;
 }
 
 .skills .skill__card:hover {

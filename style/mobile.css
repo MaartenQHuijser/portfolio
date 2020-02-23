@@ -1,4 +1,3 @@
-/* Projects */
 @media only screen and (max-width: 1000px) {
     .main__nav img {
         padding: 1rem 0;
@@ -60,10 +59,10 @@
     }
 
     .project__card {
-        grid-column-end: span 6;
+        grid-column-end: span 4;
     }
     .skills .skill__card {
-        grid-column-end: span 6;
+        grid-column-end: span 4;
     }
 }
 
